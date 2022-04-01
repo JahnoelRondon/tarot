@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
 import './App.css';
+import { Tarot } from './model';
+import tarotJson from './tarot.json'
+
+console.log(tarotJson);
+
+let t: Tarot = tarotJson
 
 function App() {
+  const [initload, setInit] = useState<boolean>(true)
+  const [tarot, setTarot] = useState<Tarot>()
+
+  console.log(tarot && tarot.cards);
+
+  useEffect(() => {
+    if(initload) {
+      setTarot(t)
+      setInit(false)
+    }
+  })
+  
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {tarot && tarot.cards.map(card => (
+        <img src={`http://localhost:3000/assets/cards/${card.img}`}/> 
+      ))}
+      
     </div>
   );
 }
