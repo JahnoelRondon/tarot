@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import './App.css';
 import { Tarot } from './model';
 import tarotJson from './tarot.json'
 // Components

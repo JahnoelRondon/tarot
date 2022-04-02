@@ -9,10 +9,10 @@ interface Props {
 
 export const CardList = ({filteredCards}: Props) => {
   return (
-    <div>
+    <section className='cardList'>
       {filteredCards.map(card => (
         <CardInfo key={card.name} card={card}/>
       ))}
-    </div>
+    </section>
   )
 }
