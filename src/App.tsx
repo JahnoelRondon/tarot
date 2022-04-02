@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import { Tarot } from './model';
 import tarotJson from './tarot.json'
+// Components
+import {Search} from './components/Search'
+import {CardList} from './components/CardList'
 
 console.log(tarotJson);
 
@@ -13,7 +16,7 @@ function App() {
   const [tarot, setTarot] = useState<Tarot>()
   const [searchField, setSearch] = useState<string>('')
 
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   }
 
@@ -30,13 +33,17 @@ function App() {
 
   console.log(filteredCard);
   
-
   return (
     <div className="App">
-      <input type='search' onChange={onChange}/>
-      {tarot && tarot.cards.map(card => (
+      <h1>Tarot Helper</h1>
+
+      <Search handleChange={handleChange} />
+      <CardList />
+
+      {/* <input type='search' onChange={onChange}/>
+      {filteredCard && filteredCard.map(card => (
         <img key={card.name} src={`http://localhost:3000/assets/cards/${card.img}`}/> 
-      ))}
+      ))} */}
     </div>
   );
 }
