@@ -1,9 +1,10 @@
 import React from 'react'
+import "./style.css"
 
 export const NavBar = () => {
   return (
     <nav>
-      <h1>NavBar</h1>
+      <h1>Tarot</h1>
     </nav>
   )
 }

@@ -4,8 +4,9 @@ import { Tarot } from './model';
 import tarotJson from './tarot.json'
 // Components
 import {Search} from './components/Search'
-import {CardList} from './components/CardList'
+import {CardList} from './components/Cards/CardList'
 import {NavBar} from './components/NavBar/NavBar'
+import {IntroText} from './components/IntroText'
 
 console.log(tarotJson);
 
@@ -37,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-
+      <IntroText />
       <Search handleChange={handleChange} />
       {filteredCard && <CardList filteredCards={filteredCard}/>}
     </div>

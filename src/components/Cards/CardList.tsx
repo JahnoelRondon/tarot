@@ -1,6 +1,7 @@
 import React from 'react'
-import {Card} from '../model'
+import {Card} from '../../model'
 import {CardInfo} from './CardInfo'
+import "./cards.css"
 
 interface Props {
   filteredCards: Card[]

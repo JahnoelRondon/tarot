@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card} from '../model'
+import {Card} from '../../model'
 
 interface Props {
   card: Card
@@ -7,8 +7,8 @@ interface Props {
 
 export const CardInfo = ({card}: Props) => {
   return (
-    <div>
+    <>
       <img src={`http://localhost:3000/assets/cards/${card.img}`}/>
-    </div>
+    </>
   )
 }
