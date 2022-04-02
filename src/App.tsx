@@ -8,10 +8,18 @@ console.log(tarotJson);
 let t: Tarot = tarotJson
 
 function App() {
+
   const [initload, setInit] = useState<boolean>(true)
   const [tarot, setTarot] = useState<Tarot>()
+  const [searchField, setSearch] = useState<string>('')
 
-  console.log(tarot && tarot.cards);
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearch(e.target.value);
+  }
+
+  const filteredCard = tarot?.cards.filter(card => {
+    return card.name.toLocaleLowerCase().includes(searchField.toLocaleLowerCase());
+  })
 
   useEffect(() => {
     if(initload) {
@@ -19,15 +27,16 @@ function App() {
       setInit(false)
     }
   })
-  
+
+  console.log(filteredCard);
   
 
   return (
     <div className="App">
+      <input type='search' onChange={onChange}/>
       {tarot && tarot.cards.map(card => (
-        <img src={`http://localhost:3000/assets/cards/${card.img}`}/> 
+        <img key={card.name} src={`http://localhost:3000/assets/cards/${card.img}`}/> 
       ))}
-      
     </div>
   );
 }
