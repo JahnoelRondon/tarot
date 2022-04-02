@@ -5,6 +5,7 @@ import tarotJson from './tarot.json'
 // Components
 import {Search} from './components/Search'
 import {CardList} from './components/CardList'
+import {NavBar} from './components/NavBar/NavBar'
 
 console.log(tarotJson);
 
@@ -35,7 +36,7 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Tarot Helper</h1>
+      <NavBar />
 
       <Search handleChange={handleChange} />
       {filteredCard && <CardList filteredCards={filteredCard}/>}
