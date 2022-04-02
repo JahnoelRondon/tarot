@@ -38,12 +38,7 @@ function App() {
       <h1>Tarot Helper</h1>
 
       <Search handleChange={handleChange} />
-      <CardList />
-
-      {/* <input type='search' onChange={onChange}/>
-      {filteredCard && filteredCard.map(card => (
-        <img key={card.name} src={`http://localhost:3000/assets/cards/${card.img}`}/> 
-      ))} */}
+      {filteredCard && <CardList filteredCards={filteredCard}/>}
     </div>
   );
 }

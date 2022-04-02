@@ -1,7 +1,17 @@
 import React from 'react'
+import {Card} from '../model'
+import {CardInfo} from './CardInfo'
 
-export const CardList = () => {
+interface Props {
+  filteredCards: Card[]
+}
+
+export const CardList = ({filteredCards}: Props) => {
   return (
-    <div>CardList</div>
+    <div>
+      {filteredCards.map(card => (
+        <CardInfo key={card.name} card={card}/>
+      ))}
+    </div>
   )
 }
