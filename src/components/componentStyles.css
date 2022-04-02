@@ -1,9 +1,29 @@
+/* Intro description styling */
+.intro {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.intro__text {
+  font-size: 24px;
+  font-family: 'Calistoga';
+  margin-bottom: 5px;
+}
+
+.intro__text2 {
+  color: gray;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Search field styling */
 .searchField {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .searchField__input {
