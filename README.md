@@ -9,6 +9,12 @@ public image referencing in react: https://stackoverflow.com/questions/39999367/
 
 ## notes
 
+-----Issues Solved
+
+React Router useLocation hook unknown type error for location. state: 
+https://github.com/reach/router/issues/414
+by: hanpanpan200
+
 If the error message is similar to
 ```
 TS2322: Type 'Card[] | undefined' is not assignable to type 'Card[]'.

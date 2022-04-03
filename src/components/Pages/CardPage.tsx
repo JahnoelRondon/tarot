@@ -1,18 +1,18 @@
 import React, {useState} from 'react'
 import { useLocation } from 'react-router-dom'
-
+import { CardDetails } from '../../model'
 
 export const CardPage = () => {
 
-  const location = useLocation()
-  // must make type, use model and check object for properties ill want to use
-  const [cardData, setData] = useState(location.state)
+  const location = useLocation();
+  const state = location.state as CardDetails // Type casting, convert a variable from one type to another.
+  
+  const [cardData, setData] = useState(state)
 
-  console.log(cardData);
   
   return (
     <>
-      {/* <img src={`http://localhost:3000/assets/cards/${cardData.img}`}/> */}
+      <img src={`http://localhost:3000/assets/cards/${cardData.img}`}/>
     </>
   )
 }
