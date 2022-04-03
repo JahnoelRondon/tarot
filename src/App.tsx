@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Route, Routes} from 'react-router-dom'
 import { Tarot } from './model';
 import tarotJson from './tarot.json'
 // Components
@@ -7,7 +8,7 @@ import {CardList} from './components/Cards/CardList'
 import {NavBar} from './components/NavBar/NavBar'
 import {IntroText} from './components/IntroText'
 
-console.log(tarotJson);
+import {Main} from './components/Pages/Main'
 
 let t: Tarot = tarotJson
 
@@ -31,15 +32,20 @@ function App() {
       setInit(false)
     }
   })
-
-  console.log(filteredCard);
   
   return (
     <div className="App">
       <NavBar />
-      <IntroText />
-      <Search handleChange={handleChange} />
-      {filteredCard && <CardList filteredCards={filteredCard}/>}
+
+       <Routes>
+
+        <Route path='/' element={
+          <Main handleChange={handleChange} filteredCard={filteredCard}/>
+          }
+        />
+        
+       </Routes>
+
     </div>
   );
 }

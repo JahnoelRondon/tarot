@@ -1,5 +1,6 @@
 import React from 'react'
 import {Card} from '../../model'
+import {Link} from 'react-router-dom'
 
 interface Props {
   card: Card
@@ -8,7 +9,9 @@ interface Props {
 export const CardInfo = ({card}: Props) => {
   return (
     <>
-      <img src={`http://localhost:3000/assets/cards/${card.img}`}/>
+      <Link to='/card' state={card}>
+        <img src={`http://localhost:3000/assets/cards/${card.img}`}/>
+      </Link> 
     </>
   )
 }
