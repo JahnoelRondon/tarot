@@ -3,12 +3,9 @@ import {Route, Routes} from 'react-router-dom'
 import { Tarot } from './model';
 import tarotJson from './tarot.json'
 // Components
-import {Search} from './components/Search'
-import {CardList} from './components/Cards/CardList'
 import {NavBar} from './components/NavBar/NavBar'
-import {IntroText} from './components/IntroText'
-
 import {Main} from './components/Pages/Main'
+import {CardPage} from './components/Pages/CardPage'
 
 let t: Tarot = tarotJson
 
@@ -43,6 +40,8 @@ function App() {
           <Main handleChange={handleChange} filteredCard={filteredCard}/>
           }
         />
+
+        <Route path='/card' element={<CardPage />}/>
         
        </Routes>
 
