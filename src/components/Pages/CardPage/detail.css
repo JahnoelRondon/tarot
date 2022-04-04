@@ -1,0 +1,26 @@
+/* Detail page */
+.cardDetail {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* use font size and children will use relative */
+}
+
+.cardDetail_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.cardDetail_card h2 {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.cardDetail_card img {
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 4px 8px 16px rgb(77, 77, 77);
+}

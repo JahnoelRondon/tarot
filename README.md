@@ -1,6 +1,8 @@
 ## Resources
 
-Ideas: https://www.tarot.com/readings-reports/tarot-readings/free
+Ideas: 
+https://www.biddytarot.com/tarot-card-meanings/major-arcana/fool/
+https://www.tarot.com/readings-reports/tarot-readings/free
 
 website: https://medium.com/nerd-for-tech/planning-my-next-react-app-tarot-deck-7fbecd8183e0
 

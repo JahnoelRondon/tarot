@@ -16,8 +16,8 @@ export const Main = ({handleChange, filteredCard}: Props) => {
   return (
     <>
       <IntroText />
-        <Search handleChange={handleChange} />
-        {filteredCard && <CardList filteredCards={filteredCard}/>}
+      <Search handleChange={handleChange} />
+      {filteredCard && <CardList filteredCards={filteredCard}/>}
     </>
   )
 }

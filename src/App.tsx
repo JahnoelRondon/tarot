@@ -5,7 +5,7 @@ import tarotJson from './tarot.json'
 // Components
 import {NavBar} from './components/NavBar/NavBar'
 import {Main} from './components/Pages/Main'
-import {CardPage} from './components/Pages/CardPage'
+import {CardPage} from './components/Pages/CardPage/CardPage'
 
 let t: Tarot = tarotJson
 
