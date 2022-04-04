@@ -19,9 +19,12 @@ function App() {
     setSearch(e.target.value);
   }
 
-  const filteredCard = tarot?.cards.filter(card => {
+  const filteredCards = tarot?.cards.filter(card => {
     return card.name.toLocaleLowerCase().includes(searchField.toLocaleLowerCase());
   })
+
+  console.log(filteredCards);
+  
 
   useEffect(() => {
     if(initload) {
@@ -32,12 +35,13 @@ function App() {
   
   return (
     <div className="App">
+      {/* whem making links to different card types try using suit as a way to render an array specific to the suit name */}
       <NavBar />
 
        <Routes>
 
         <Route path='/' element={
-          <Main handleChange={handleChange} filteredCard={filteredCard}/>
+          <Main handleChange={handleChange} filteredCards={filteredCards}/>
           }
         />
 

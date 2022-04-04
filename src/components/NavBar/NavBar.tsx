@@ -5,7 +5,7 @@ import "./style.css"
 export const NavBar = () => {
   return (
     <nav>
-      <Link to='/'><h1>Tarot</h1></Link>
+      <Link to='/'><h1>Simply Tarot</h1></Link>
     </nav>
   )
 }
