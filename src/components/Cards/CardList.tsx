@@ -4,13 +4,13 @@ import {CardInfo} from './CardInfo'
 import "./cards.css"
 
 interface Props {
-  filteredCards: Card[]
+  cardsListed: Card[] | undefined
 }
 
-export const CardList = ({filteredCards}: Props) => {
+export const CardList = ({cardsListed}: Props) => {
   return (
     <section className='cardList'>
-      {filteredCards.map(card => (
+      {cardsListed?.map(card => (
         <CardInfo key={card.name} card={card}/>
       ))}
     </section>

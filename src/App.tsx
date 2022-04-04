@@ -53,7 +53,7 @@ function App() {
        <Routes>
 
         <Route path='/' element={
-          <Main handleChange={handleChange} filteredCards={filteredCards}/>
+          <Main handleChange={handleChange} cardsListed={filteredCards}/>
           }
         />
 

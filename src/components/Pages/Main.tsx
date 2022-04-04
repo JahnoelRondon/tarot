@@ -8,19 +8,19 @@ import {Card} from '../../model'
 interface Props {
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   // made into tuple because filteredcards is initial undefined
-  filteredCards: Card[] | undefined;
+  cardsListed: Card[] | undefined;
 }
 
-export const Main = ({handleChange, filteredCards}: Props) => {
+export const Main = ({handleChange, cardsListed}: Props) => {
   
   return (
     <section className='main'>
       <IntroText />
       <Search handleChange={handleChange} />
       {
-        filteredCards && 
-          filteredCards.length ? 
-            <CardList filteredCards={filteredCards} /> :
+        cardsListed && 
+          cardsListed.length ? 
+            <CardList cardsListed={cardsListed} /> :
             <p className='main_nomatch'>No Matches</p>
       }
     </section>
