@@ -16,12 +16,14 @@ export const NavBar = ({suitCategory}: Props) => {
         <h1><span className='title_fun'>T</span>otally <span className='title_fun'>T</span>arot</h1>
       </Link>
 
-      {/* must be written this way instead of {suitCategory('Trump')} */}
-      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Trump')}>Trumps</Link>
-      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Cups')}>Cups</Link>
-      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Swords')}>Swords</Link>
-      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Wands')}>Wands</Link>
-      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Pentacles')}>Pentacles</Link>
+      {/* onClick must be written this way instead of {suitCategory('Trump')} */}
+      <div className="nav_suitSection">
+        <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Trump')}>Trumps</Link>
+        <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Cups')}>Cups</Link>
+        <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Swords')}>Swords</Link>
+        <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Wands')}>Wands</Link>
+        <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Pentacles')}>Pentacles</Link>
+      </div>
 
     </nav>
   )

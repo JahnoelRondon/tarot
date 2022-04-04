@@ -5,6 +5,7 @@ nav {
   box-shadow: 0 4px 2px -2px gray;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .title {
@@ -15,4 +16,23 @@ nav {
 
 .title_fun {
   color: var(--red);
+}
+
+.nav_suitSection {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+}
+
+.nav_suit {
+  text-decoration: none;
+  color: var(--purple);
+  transition: all 0.4s;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav_suit:hover {
+  color: white;
+  background-color: var(--purple);
 }
