@@ -1,7 +1,13 @@
+/* my styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --purple: #370665;
+  --red: #B85252;
 }
 
 body {

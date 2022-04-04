@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Route, Routes} from 'react-router-dom'
-import { Tarot } from './model';
+import { Tarot, Card } from './model';
 import tarotJson from './tarot.json'
 // Components
 import {NavBar} from './components/NavBar/NavBar'
@@ -13,6 +13,7 @@ function App() {
 
   const [initload, setInit] = useState<boolean>(true)
   const [tarot, setTarot] = useState<Tarot>()
+  const [cards, setCards] = useState<Card[]>()
   const [searchField, setSearch] = useState<string>('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,9 +24,15 @@ function App() {
     return card.name.toLocaleLowerCase().includes(searchField.toLocaleLowerCase());
   })
 
-  console.log(filteredCards);
-  
+  const suitCategory = (suit: string) => {
+    
+    const suitcards = tarot?.cards.filter(card => {
+      return card.suit.toLocaleLowerCase().includes(suit.toLocaleLowerCase());
+    })
 
+    setCards(suitcards)
+  }
+  
   useEffect(() => {
     if(initload) {
       setTarot(t)
@@ -36,7 +43,11 @@ function App() {
   return (
     <div className="App">
       {/* whem making links to different card types try using suit as a way to render an array specific to the suit name */}
-      <NavBar />
+      {/* make a single component that renders information about the suit based on what the suit name is, the cards can be rendered normally as they are i nthe homepage */}
+      
+      <NavBar 
+        suitCategory={suitCategory}
+      />
 
        <Routes>
 

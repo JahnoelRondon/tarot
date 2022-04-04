@@ -23,3 +23,9 @@ TS2322: Type 'Card[] | undefined' is not assignable to type 'Card[]'.
   Type 'undefined' is not assignable to type 'Card[]'.
 ```
 It most likely means that on the initial render typescript sees that the data isnt defined it therefor you need to make sure to use conditional rendering and type checking or define the type as a tuple with undefined as one of the types. 
+
+## Things learned
+
+Typescript
+CSS variables
+Local/Public React File usage for images and assets

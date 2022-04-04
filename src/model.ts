@@ -1,6 +1,7 @@
 export interface Card {
   name: string
   img: string
+  suit: string
 }
 
 export interface Tarot{
