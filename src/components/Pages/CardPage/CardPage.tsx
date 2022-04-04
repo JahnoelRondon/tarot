@@ -9,8 +9,6 @@ export const CardPage = () => {
   const state = location.state as CardDetails // Type casting, convert a variable from one type to another.
   
   const [cardData, setData] = useState(state)
-
-  console.log(cardData);
   
   return (
     <>
@@ -48,7 +46,7 @@ export const CardPage = () => {
           <div className="cardDetail_infoSection">
             <h3 className='cardDetail_info_desc'>Common Questions</h3>
             {cardData["Questions to Ask"].map((string, idx) => (
-              <p className='cardDetail_info_txt'><strong>{`${idx + 1}.)`}</strong>{` ${string}`}</p>
+              <p key={idx} className='cardDetail_info_txt'><strong>{`${idx + 1}.)`}</strong>{` ${string}`}</p>
             ))}
           </div>
 

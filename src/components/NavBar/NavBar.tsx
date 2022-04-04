@@ -17,11 +17,11 @@ export const NavBar = ({suitCategory}: Props) => {
       </Link>
 
       {/* must be written this way instead of {suitCategory('Trump')} */}
-      <button onClick={() => suitCategory('Trump')}>Trumps</button>
-      <button onClick={() => suitCategory('Cups')}>Cups</button>
-      <button onClick={() => suitCategory('Swords')}>Swords</button>
-      <button onClick={() => suitCategory('Wands')}>Wands</button>
-      <button onClick={() => suitCategory('Pentacles')}>Pentacles</button>
+      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Trump')}>Trumps</Link>
+      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Cups')}>Cups</Link>
+      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Swords')}>Swords</Link>
+      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Wands')}>Wands</Link>
+      <Link to='/suit' className='nav_suit' onClick={() => suitCategory('Pentacles')}>Pentacles</Link>
 
     </nav>
   )

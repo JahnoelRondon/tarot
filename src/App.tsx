@@ -6,6 +6,7 @@ import tarotJson from './tarot.json'
 import {NavBar} from './components/NavBar/NavBar'
 import {Main} from './components/Pages/Main'
 import {CardPage} from './components/Pages/CardPage/CardPage'
+import {Suit} from './components/Pages/Suit'
 
 let t: Tarot = tarotJson
 
@@ -57,6 +58,8 @@ function App() {
         />
 
         <Route path='/card' element={<CardPage />}/>
+
+        <Route path='/suit' element={<Suit cards={cards} />}/>
         
        </Routes>
 
