@@ -13,33 +13,48 @@ export const CardPage = () => {
   console.log(cardData);
   
   return (
-    <section className='cardDetail'>
-      {/* Find font for title */}
+    <>
+      <h2 className='cardTitle'>{cardData.name} Tarot Card Meanings</h2>
+      <section className='cardDetail'>
+        {/* Find font for title */}
 
-      <div className='cardDetail_card'>
-        <h2>{cardData.name} Tarot Card Meanings</h2>
-        <img src={`http://localhost:3000/assets/cards/${cardData.img}`}/>
-      </div>
-      
-      <div className="cardDetail_info">
-        <h3 className='cardDetail_info_desc'>Mythical/Spiritual Meaning</h3>
-        <p className='cardDetail_info_txt'>{cardData['Mythical/Spiritual']}</p>
+        <div className='cardDetail_card'>
+          <img src={`http://localhost:3000/assets/cards/${cardData.img}`}/>
+        </div>
+        
+        <div className="cardDetail_info">
 
-        <h3 className='cardDetail_info_desc'>{cardData.name} position meanings.</h3>
-        <p className='cardDetail_info_txt'><strong>Upright: </strong>{cardData.meanings.light.map(m => ` ${m},`)}</p>
-        <p className='cardDetail_info_txt'><strong>Upside Down: </strong>{cardData.meanings.shadow.map(m => ` ${m},`)}</p>
+          <div className="cardDetail_infoSection">
+            <h3 className='cardDetail_info_desc'>Mythical/Spiritual Meaning</h3>
+            <p className='cardDetail_info_txt'>{cardData['Mythical/Spiritual']}</p>
+          </div>
 
-        <h3 className='cardDetail_info_desc'>Keywords</h3>
-        <p className='cardDetail_info_txt'>{cardData.keywords.map(m => ` ${m},`)}</p>
+          <div className="cardDetail_infoSection">
+            <h3 className='cardDetail_info_desc'>{cardData.name} position meanings.</h3>
+            <p className='cardDetail_info_txt'><strong>Upright: </strong>{cardData.meanings.light.map(m => ` ${m},`)}</p>
+            <p className='cardDetail_info_txt'><strong>Upside Down: </strong>{cardData.meanings.shadow.map(m => ` ${m},`)}</p>
+          </div>
 
-        <h3 className='cardDetail_info_desc'>Fortunes</h3>
-        <p className='cardDetail_info_txt'>{cardData.fortune_telling.map(m => ` ${m},`)}</p>
+          <div className="cardDetail_infoSection">
+            <h3 className='cardDetail_info_desc'>Keywords</h3>
+            <p className='cardDetail_info_txt'>{cardData.keywords.map(m => ` ${m},`)}</p>
+          </div>
 
-        <h3 className='cardDetail_info_desc'>Common Questions</h3>
-        <p className='cardDetail_info_txt'>{cardData['Questions to Ask'].map((m, idx) => `${idx + 1}.) ${m} `)}</p>
-      </div>
+          <div className="cardDetail_infoSection">
+            <h3 className='cardDetail_info_desc'>Fortunes</h3>
+            <p className='cardDetail_info_txt'>{cardData.fortune_telling.map(m => ` ${m},`)}</p>
+          </div>
 
+          <div className="cardDetail_infoSection">
+            <h3 className='cardDetail_info_desc'>Common Questions</h3>
+            {cardData["Questions to Ask"].map((string, idx) => (
+              <p className='cardDetail_info_txt'><strong>{`${idx + 1}.)`}</strong>{` ${string}`}</p>
+            ))}
+          </div>
 
-    </section>
+        </div>
+
+      </section>
+    </>
   )
 }

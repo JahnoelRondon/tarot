@@ -1,9 +1,17 @@
 /* Detail page */
+.cardTitle {
+  font-size: 1.6rem;
+  margin: 20px;
+  text-align: center;
+  color: #370665;
+  text-shadow: 1px 2px 4px rgb(124, 124, 124);
+  /* text-decoration: underline; */
+}
+
 .cardDetail {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /* use font size and children will use relative */
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  padding-top: 20px;
 }
 
 .cardDetail_card {
@@ -11,16 +19,31 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 10px;
-}
-
-.cardDetail_card h2 {
-  font-size: 2rem;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .cardDetail_card img {
   border-radius: 5px;
   border: 2px solid black;
   box-shadow: 4px 8px 16px rgb(77, 77, 77);
+}
+
+.cardDetail_info {
+  padding: 0 40px;
+}
+
+.cardDetail_infoSection {
+  margin-bottom: 20px;
+}
+
+.cardDetail_info_desc {
+  letter-spacing: 1.5px;
+  padding-bottom: 5px;
+  color: #B85252;
+  text-shadow: 1px 2px 4px rgba(124, 124, 124, 0.7);
+}
+
+.cardDetail_info_txt {
+  font-size: 1rem;
+  line-height: 30px;
 }
