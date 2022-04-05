@@ -13,6 +13,9 @@ public image referencing in react: https://stackoverflow.com/questions/39999367/
 
 -----Issues Solved
 
+Using strings to get object keys:
+https://bobbyhadz.com/blog/typescript-no-index-signature-with-parameter-of-type-string
+
 React Router useLocation hook unknown type error for location. state: 
 https://github.com/reach/router/issues/414
 by: hanpanpan200
