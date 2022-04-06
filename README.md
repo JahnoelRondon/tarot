@@ -2,7 +2,12 @@
 
 <a href="https://totallytarot.netlify.app/">Link to site</a>
 
-![Tottaly Tarot](https://i.imgur.com/ojl0kkF.png)
+During my time of self care I picked up a deck of Tarot cards to learn for fun on my free time. As I was going over the cards I found it
+very difficult to have to constantly go back and forth between the panflet that gives little information on the cards, to websites
+and videos for card meanings. In this frustration I thought of Totally Tarot. A website you can go to and instantly find the cards
+with no hassle through a filtered search as well as by category. No long boring paragraph of Lore and history, simply just cards and their meanings.
+
+![Tottaly Tarot](https://i.imgur.com/uYaKXbD.png)
 
 ## Tech Used
 
@@ -23,17 +28,12 @@ Ideas:
 https://www.biddytarot.com/tarot-card-meanings/major-arcana/fool/
 https://www.tarot.com/readings-reports/tarot-readings/free
 
-website: 
-https://medium.com/nerd-for-tech/planning-my-next-react-app-tarot-deck-7fbecd8183e0
-
 public image referencing in react: 
 https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
 I had changed the url from local host during testing to the domain i was hosting it on
 https://totallytarot.netlify.app/
 
-## notes
-
------Issues Solved
+## Conflicts
 
 Using strings to get object keys:
 https://bobbyhadz.com/blog/typescript-no-index-signature-with-parameter-of-type-string
