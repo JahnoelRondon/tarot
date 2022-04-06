@@ -81,3 +81,9 @@
     margin-bottom: 30px;
   }
 }
+
+@media only screen and (max-width: 412px) {
+  .cardDetail_info_txt {
+    font-size: 1.1rem;
+  }
+}
