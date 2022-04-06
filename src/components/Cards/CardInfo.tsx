@@ -10,7 +10,7 @@ export const CardInfo = ({card}: Props) => {
   return (
     <>
       <Link to='/card' state={card}>
-        <img className='cardStyles' src={`http://localhost:3000/assets/cards/${card.img}`}/>
+        <img className='cardStyles' src={`https://totallytarot.netlify.app//assets/cards/${card.img}`}/>
       </Link> 
     </>
   )

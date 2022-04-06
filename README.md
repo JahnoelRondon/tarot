@@ -7,6 +7,9 @@ https://www.tarot.com/readings-reports/tarot-readings/free
 website: https://medium.com/nerd-for-tech/planning-my-next-react-app-tarot-deck-7fbecd8183e0
 
 public image referencing in react: https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
+I had changed the url from local host during testing to the domain i was hosting it on
+https://totallytarot.netlify.app/
+
 
 
 ## notes

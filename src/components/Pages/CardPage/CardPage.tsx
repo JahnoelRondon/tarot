@@ -17,7 +17,7 @@ export const CardPage = () => {
         {/* Find font for title */}
 
         <div className='cardDetail_card'>
-          <img src={`http://localhost:3000/assets/cards/${cardData.img}`}/>
+          <img src={`https://totallytarot.netlify.app//assets/cards/${cardData.img}`}/>
         </div>
         
         <div className="cardDetail_info">
