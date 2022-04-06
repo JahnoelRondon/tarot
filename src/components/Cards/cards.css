@@ -36,4 +36,8 @@
   .cardStyles {
     width: 130px;
   }
+
+  .cardStyles:hover {
+    width: 129.5px;
+  }
 }

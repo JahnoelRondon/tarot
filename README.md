@@ -1,16 +1,35 @@
+# Totally Tarrot
+
+<a href="https://totallytarot.netlify.app/">Link to site</a>
+
+![Tottaly Tarot](https://i.imgur.com/ojl0kkF.png)
+
+## Tech Used
+
+<ul>
+    <li>React</li>
+    <li>TypeScript</li>
+    <li>JavaScript</li>
+    <li>React Router v6</li>
+</ul>
+
+## Future Updates
+
+In the future I plan to add the cards elements as well as a possible automated card reading/shuffle.
+
 ## Resources
 
 Ideas: 
 https://www.biddytarot.com/tarot-card-meanings/major-arcana/fool/
 https://www.tarot.com/readings-reports/tarot-readings/free
 
-website: https://medium.com/nerd-for-tech/planning-my-next-react-app-tarot-deck-7fbecd8183e0
+website: 
+https://medium.com/nerd-for-tech/planning-my-next-react-app-tarot-deck-7fbecd8183e0
 
-public image referencing in react: https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
+public image referencing in react: 
+https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
 I had changed the url from local host during testing to the domain i was hosting it on
 https://totallytarot.netlify.app/
-
-
 
 ## notes
 
