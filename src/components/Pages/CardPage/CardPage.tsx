@@ -24,7 +24,7 @@ export const CardPage = () => {
 
           <div className="cardDetail_infoSection">
             <h3 className='cardDetail_info_desc'>Mythical/Spiritual Meaning</h3>
-            <p className='cardDetail_info_txt'>{cardData['Mythical/Spiritual']}</p>
+            <p className='cardDetail_info_txt'>{cardData['Mythical/Spiritual'] ? cardData['Mythical/Spiritual'] : "Minor Arcana cards do not have Mythical / Spiritual meanings."}</p>
           </div>
 
           <div className="cardDetail_infoSection">

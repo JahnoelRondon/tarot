@@ -21,3 +21,13 @@
   box-shadow: 0px 0px 8px rgba(128, 0, 128, 0.85);
   width: 239.5px;
 }
+
+@media only screen and (max-width: 780px) {
+  .cardStyles {
+    width: 180px;
+  }
+
+  .cardStyles:hover {
+    width: 179.5px;
+  }
+}

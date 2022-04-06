@@ -8,7 +8,7 @@
 
 .suitPage_title {
   padding-bottom: 10px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-shadow: 1px 2px 4px rgba(124, 124, 124, 0.6);
   color: var(--purple);
 }
@@ -16,5 +16,15 @@
 .suitPage_txt {
   text-align: center;
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .suitPage_title {
+    font-size: 1.8rem;
+  }
+
+  .suitPage_txt {
+    font-size: 1.3rem;
+  }
 }

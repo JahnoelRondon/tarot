@@ -28,6 +28,7 @@ nav {
   text-decoration: none;
   color: var(--purple);
   transition: all 0.4s;
+  font-size: 1.2rem;
   font-weight: bold;
   padding: 10px;
 }
@@ -35,4 +36,20 @@ nav {
 .nav_suit:hover {
   color: white;
   background-color: var(--purple);
+}
+
+@media only screen and (max-width: 780px) {
+  nav {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .title {
+  font-size: 2rem;
+  }
+
+  .nav_suit {
+    padding: 7px;
+    font-size: 1.4rem;
+  }
 }

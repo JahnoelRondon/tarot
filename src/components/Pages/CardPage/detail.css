@@ -1,6 +1,6 @@
 /* Detail page */
 .cardTitle {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin: 20px;
   text-align: center;
   color: #370665;
@@ -15,7 +15,7 @@
 
 .cardDetail_card {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: column;
   padding: 0 10px;
@@ -36,6 +36,7 @@
 }
 
 .cardDetail_info_desc {
+  font-size: 1.2rem;
   letter-spacing: 1.5px;
   padding-bottom: 5px;
   color: #B85252;
@@ -44,5 +45,39 @@
 
 .cardDetail_info_txt {
   font-size: 1rem;
-  line-height: 30px;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 780px) {
+  .cardTitle {
+    font-size: 1.8rem;
+  }
+
+  .cardDetail_info_desc {
+    font-size: 1.4rem;
+  }
+
+  .cardDetail_card img {
+    width: 240px;
+  }
+
+  .cardDetail_info_txt {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media only screen and (max-width: 680px) {
+  .cardDetail {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cardDetail_card {
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
