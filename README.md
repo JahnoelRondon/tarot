@@ -3,7 +3,7 @@
 <a href="https://totallytarot.netlify.app/">Link to site</a>
 
 During my time of self care I picked up a deck of Tarot cards to learn for fun on my free time. As I was going over the cards I found it
-very difficult to have to constantly go back and forth between the panflet that gives little information on the cards, to websites
+very difficult to have to constantly go back and forth between the panphlet that gives little information on the cards, to websites
 and videos for card meanings. In this frustration I thought of Totally Tarot. A website you can go to and instantly find the cards
 with no hassle through a filtered search as well as by category. No long boring paragraph of Lore and history, simply just cards and their meanings.
 
@@ -52,5 +52,7 @@ It most likely means that on the initial render typescript sees that the data is
 ## Things learned
 
 Typescript
+
 CSS variables
+
 Local/Public React File usage for images and assets

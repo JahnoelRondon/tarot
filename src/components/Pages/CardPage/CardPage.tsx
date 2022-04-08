@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { useLocation } from 'react-router-dom'
 import { CardDetails } from '../../../model'
+import { Link } from 'react-router-dom'
 import './detail.css'
 
 export const CardPage = () => {
@@ -12,9 +13,10 @@ export const CardPage = () => {
   
   return (
     <>
+      <p className='homeLink'><Link to='/'>{'<'}Home</Link></p>
       <h2 className='cardTitle'>{cardData.name} Tarot Card Meanings</h2>
       <section className='cardDetail'>
-        {/* Find font for title */}
+        
 
         <div className='cardDetail_card'>
           <img src={`https://totallytarot.netlify.app//assets/cards/${cardData.img}`}/>

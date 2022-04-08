@@ -1,9 +1,28 @@
 /* Detail page */
+.homeLink {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 1.1px;
+}
+
+.homeLink a {
+  text-decoration: none;
+  color: var(--red);
+  padding: 4px;
+  transition: all 0.2s;
+}
+
+.homeLink a:hover {
+  border-bottom: 2px solid var(--purple);
+  color: var(--purple);
+}
+
 .cardTitle {
   font-size: 1.7rem;
   margin: 20px;
   text-align: center;
-  color: #370665;
+  color: var(--purple);
   text-shadow: 1px 2px 4px rgba(124, 124, 124, 0.7);
 }
 
