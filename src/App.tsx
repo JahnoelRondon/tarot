@@ -43,8 +43,6 @@ function App() {
   
   return (
     <div className="App">
-      {/* whem making links to different card types try using suit as a way to render an array specific to the suit name */}
-      {/* make a single component that renders information about the suit based on what the suit name is, the cards can be rendered normally as they are i nthe homepage */}
       
       <NavBar 
         suitCategory={suitCategory}
@@ -53,7 +51,7 @@ function App() {
        <Routes>
 
         <Route path='/' element={
-          <Main handleChange={handleChange} cardsListed={filteredCards}/>
+          <Main handleChange={handleChange} cardsListed={filteredCards} searchField={searchField}/>
           }
         />
 

@@ -9,14 +9,15 @@ interface Props {
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   // made into tuple because filteredcards is initial undefined
   cardsListed: Card[] | undefined;
+  searchField: string;
 }
 
-export const Main = ({handleChange, cardsListed}: Props) => {
+export const Main = ({handleChange, cardsListed, searchField}: Props) => {
   
   return (
     <section className='main'>
       <IntroText />
-      <Search handleChange={handleChange} />
+      <Search handleChange={handleChange} searchField={searchField}/>
       {
         cardsListed && 
           cardsListed.length ? 
