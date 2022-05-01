@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useLocation } from 'react-router-dom'
 import { CardDetails } from '../../../model'
 import { Link } from 'react-router-dom'
@@ -10,6 +10,10 @@ export const CardPage = () => {
   const state = location.state as CardDetails // Type casting, convert a variable from one type to another.
   
   const [cardData, setData] = useState(state)
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  })
   
   return (
     <>
