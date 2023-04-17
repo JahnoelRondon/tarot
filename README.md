@@ -7,7 +7,7 @@ very difficult to have to constantly go back and forth between the panphlet that
 and videos for card meanings. In this frustration I thought of Totally Tarot. A website you can go to and instantly find the cards
 with no hassle through a filtered search as well as by category. No long boring paragraph of Lore and history, simply just cards and their meanings.
 
-![Tottaly Tarot](https://i.imgur.com/ojl0kkF.png)
+![Imgur](https://i.imgur.com/dVwWRGN.png)
 
 ## Tech Used
 
